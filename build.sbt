@@ -17,7 +17,7 @@ commonSourcePackages += "common"
 
 assignmentsMap := {
   val depsSpark = Seq(
-    "org.apache.spark" %% "spark-core" % "2.1.0"
+    "org.apache.spark" %% "spark-core" % "2.1.1"
   )
   Map(
     "example" -> Assignment(
@@ -53,7 +53,7 @@ assignmentsMap := {
       partId = "y8PO8",
       maxScore = 10d,
       styleScoreRatio = 0.0,
-      dependencies = depsSpark :+ ("org.apache.spark" %% "spark-sql" % "2.1.0"),
+      dependencies = depsSpark :+ ("org.apache.spark" %% "spark-sql" % "2.1.1"),
       options = Map("Xmx"->"1540m", "grader-memory"->"2048", "totalTimeout" -> "900", "grader-cpu" -> "2"))
   )
 }
